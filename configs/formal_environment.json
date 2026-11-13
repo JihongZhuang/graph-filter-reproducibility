@@ -1,0 +1,30 @@
+{
+  "platform": "Windows 11 x64",
+  "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "python": "3.12.14",
+  "torch": "2.6.0+cpu",
+  "numpy": "2.3.5",
+  "scipy": "1.15.3",
+  "psutil": "7.0.0",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "worker_logical_cpu_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "precision": "float32",
+  "processes": 44,
+  "controlled": 30,
+  "exploratory": 14,
+  "run_protocol": {
+    "fresh_workers": true,
+    "cooldown_seconds": 15,
+    "os_cache_flushed": false,
+    "model_warmup": false,
+    "rss_sample_ms": 10,
+    "windows_lifetime_peak_checked": true,
+    "sleep_and_power_checked": true
+  }
+}

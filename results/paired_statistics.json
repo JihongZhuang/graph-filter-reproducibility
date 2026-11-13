@@ -1,0 +1,550 @@
+{
+  "amazon_f2/same_batch64": {
+    "n_complete_pairs": 5,
+    "expected_pairs": 5,
+    "complete_five_pairs": true,
+    "pairs": [
+      {
+        "repeat": 0,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b64_r0",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r0",
+        "author_parent_seconds": 2034.4372535999864,
+        "direct_parent_seconds": 1499.4793533999473,
+        "author_observed_peak_bytes": 672894976,
+        "direct_observed_peak_bytes": 551469056,
+        "time_ratio_author_over_direct": 1.3567624315647067,
+        "memory_ratio_author_over_direct": 1.2201862800439705,
+        "relative_peak_gap": 0.18045300430360176,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 1,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b64_r1",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r1",
+        "author_parent_seconds": 1921.4133922000183,
+        "direct_parent_seconds": 1346.2716905999696,
+        "author_observed_peak_bytes": 672522240,
+        "direct_observed_peak_bytes": 551342080,
+        "time_ratio_author_over_direct": 1.4272107224833164,
+        "memory_ratio_author_over_direct": 1.2197912410385945,
+        "relative_peak_gap": 0.18018758755100797,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 2,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b64_r2",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r2",
+        "author_parent_seconds": 1949.8084769000416,
+        "direct_parent_seconds": 1318.656616100052,
+        "author_observed_peak_bytes": 675930112,
+        "direct_observed_peak_bytes": 551100416,
+        "time_ratio_author_over_direct": 1.4786324605617431,
+        "memory_ratio_author_over_direct": 1.2265098925274627,
+        "relative_peak_gap": 0.18467840651549491,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 3,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b64_r3",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r3",
+        "author_parent_seconds": 1874.9272712999955,
+        "direct_parent_seconds": 1491.7451785000158,
+        "author_observed_peak_bytes": 672595968,
+        "direct_observed_peak_bytes": 550924288,
+        "time_ratio_author_over_direct": 1.256868330008801,
+        "memory_ratio_author_over_direct": 1.2208500925629913,
+        "relative_peak_gap": 0.1808986163889701,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 4,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b64_r4",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r4",
+        "author_parent_seconds": 2061.4075853000395,
+        "direct_parent_seconds": 1462.5357461000094,
+        "author_observed_peak_bytes": 672890880,
+        "direct_observed_peak_bytes": 551456768,
+        "time_ratio_author_over_direct": 1.4094750099592293,
+        "memory_ratio_author_over_direct": 1.2202060416094123,
+        "relative_peak_gap": 0.1804662770878987,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      }
+    ],
+    "direct_peak_direction_counts": {
+      "higher": 0,
+      "lower": 5,
+      "equal": 0
+    },
+    "time_ratio": {
+      "n": 5,
+      "median": 1.4094750099592293,
+      "q25": 1.3567624315647067,
+      "q75": 1.4272107224833164,
+      "iqr": 0.07044829091860971,
+      "min": 1.256868330008801,
+      "max": 1.4786324605617431,
+      "raw": [
+        1.3567624315647067,
+        1.4272107224833164,
+        1.4786324605617431,
+        1.256868330008801,
+        1.4094750099592293
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.3836933756546976,
+      "conditional_percentile_95_ci": [
+        1.3158210264456314,
+        1.4439455292554542
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "memory_ratio": {
+      "n": 5,
+      "median": 1.2202060416094123,
+      "q25": 1.2201862800439705,
+      "q75": 1.2208500925629913,
+      "iqr": 0.0006638125190208122,
+      "min": 1.2197912410385945,
+      "max": 1.2265098925274627,
+      "raw": [
+        1.2201862800439705,
+        1.2197912410385945,
+        1.2265098925274627,
+        1.2208500925629913,
+        1.2202060416094123
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.2215061079893914,
+      "conditional_percentile_95_ci": [
+        1.2200322008673694,
+        1.2240303981844431
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "approximately_equal_peak_all_five_pairs": false,
+    "memory_match_rule": "Every one of five paired gaps abs(author-direct)/max(author,direct) <=5%; peak=max(full-lifecycle sampled RSS, Windows lifetime peak).",
+    "memory_interpretation": "measured_resource_budgets_differ_report_each_pair"
+  },
+  "amazon_f2/author32_vs_direct64_budget": {
+    "n_complete_pairs": 5,
+    "expected_pairs": 5,
+    "complete_five_pairs": true,
+    "pairs": [
+      {
+        "repeat": 0,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b32_r0",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r0",
+        "author_parent_seconds": 1982.4141819999786,
+        "direct_parent_seconds": 1499.4793533999473,
+        "author_observed_peak_bytes": 527749120,
+        "direct_observed_peak_bytes": 551469056,
+        "time_ratio_author_over_direct": 1.322068341591377,
+        "memory_ratio_author_over_direct": 0.9569877298790814,
+        "relative_peak_gap": 0.04301227012091863,
+        "direct_peak_relation_to_author": "higher",
+        "within_5_percent_peak": true
+      },
+      {
+        "repeat": 1,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b32_r1",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r1",
+        "author_parent_seconds": 1833.7821656000451,
+        "direct_parent_seconds": 1346.2716905999696,
+        "author_observed_peak_bytes": 524705792,
+        "direct_observed_peak_bytes": 551342080,
+        "time_ratio_author_over_direct": 1.3621189381043994,
+        "memory_ratio_author_over_direct": 0.9516882730953531,
+        "relative_peak_gap": 0.04831172690464693,
+        "direct_peak_relation_to_author": "higher",
+        "within_5_percent_peak": true
+      },
+      {
+        "repeat": 2,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b32_r2",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r2",
+        "author_parent_seconds": 1867.4947175999987,
+        "direct_parent_seconds": 1318.656616100052,
+        "author_observed_peak_bytes": 525250560,
+        "direct_observed_peak_bytes": 551100416,
+        "time_ratio_author_over_direct": 1.4162100237460942,
+        "memory_ratio_author_over_direct": 0.9530941090779361,
+        "relative_peak_gap": 0.04690589092206383,
+        "direct_peak_relation_to_author": "higher",
+        "within_5_percent_peak": true
+      },
+      {
+        "repeat": 3,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b32_r3",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r3",
+        "author_parent_seconds": 2097.5951710999943,
+        "direct_parent_seconds": 1491.7451785000158,
+        "author_observed_peak_bytes": 527618048,
+        "direct_observed_peak_bytes": 550924288,
+        "time_ratio_author_over_direct": 1.4061350432579744,
+        "memory_ratio_author_over_direct": 0.9576961108674156,
+        "relative_peak_gap": 0.042303889132584406,
+        "direct_peak_relation_to_author": "higher",
+        "within_5_percent_peak": true
+      },
+      {
+        "repeat": 4,
+        "author_directory": "amazon_f2_Q1_author_snapshot_b32_r4",
+        "direct_directory": "amazon_f2_Q1_streaming_direct_b64_r4",
+        "author_parent_seconds": 1815.147553799965,
+        "direct_parent_seconds": 1462.5357461000094,
+        "author_observed_peak_bytes": 524800000,
+        "direct_observed_peak_bytes": 551456768,
+        "time_ratio_author_over_direct": 1.2410961979153183,
+        "memory_ratio_author_over_direct": 0.9516611826223883,
+        "relative_peak_gap": 0.04833881737761173,
+        "direct_peak_relation_to_author": "higher",
+        "within_5_percent_peak": true
+      }
+    ],
+    "direct_peak_direction_counts": {
+      "higher": 5,
+      "lower": 0,
+      "equal": 0
+    },
+    "time_ratio": {
+      "n": 5,
+      "median": 1.3621189381043994,
+      "q25": 1.322068341591377,
+      "q75": 1.4061350432579744,
+      "iqr": 0.08406670166659747,
+      "min": 1.2410961979153183,
+      "max": 1.4162100237460942,
+      "raw": [
+        1.322068341591377,
+        1.3621189381043994,
+        1.4162100237460942,
+        1.4061350432579744,
+        1.2410961979153183
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.347987346556042,
+      "conditional_percentile_95_ci": [
+        1.288663282820255,
+        1.4012153442767832
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "memory_ratio": {
+      "n": 5,
+      "median": 0.9530941090779361,
+      "q25": 0.9516882730953531,
+      "q75": 0.9569877298790814,
+      "iqr": 0.00529945678372834,
+      "min": 0.9516611826223883,
+      "max": 0.9576961108674156,
+      "raw": [
+        0.9569877298790814,
+        0.9516882730953531,
+        0.9530941090779361,
+        0.9576961108674156,
+        0.9516611826223883
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 0.9542219233842679,
+      "conditional_percentile_95_ci": [
+        0.9519584348213396,
+        0.9564907938843555
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "approximately_equal_peak_all_five_pairs": true,
+    "memory_match_rule": "Every one of five paired gaps abs(author-direct)/max(author,direct) <=5%; peak=max(full-lifecycle sampled RSS, Windows lifetime peak).",
+    "memory_interpretation": "approximately_equal_observed_peak"
+  },
+  "yelp_f5/same_batch64": {
+    "n_complete_pairs": 5,
+    "expected_pairs": 5,
+    "complete_five_pairs": true,
+    "pairs": [
+      {
+        "repeat": 0,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b64_r0",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r0",
+        "author_parent_seconds": 814.0962718999945,
+        "direct_parent_seconds": 663.8009735999512,
+        "author_observed_peak_bytes": 507068416,
+        "direct_observed_peak_bytes": 381444096,
+        "time_ratio_author_over_direct": 1.2264162064797162,
+        "memory_ratio_author_over_direct": 1.3293387453557546,
+        "relative_peak_gap": 0.24774629228731138,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 1,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b64_r1",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r1",
+        "author_parent_seconds": 805.1644013000187,
+        "direct_parent_seconds": 656.0453409000183,
+        "author_observed_peak_bytes": 508018688,
+        "direct_observed_peak_bytes": 381771776,
+        "time_ratio_author_over_direct": 1.2272999305130743,
+        "memory_ratio_author_over_direct": 1.3306868656524258,
+        "relative_peak_gap": 0.24850840132873223,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 2,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b64_r2",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r2",
+        "author_parent_seconds": 801.0313934999867,
+        "direct_parent_seconds": 643.9174225000315,
+        "author_observed_peak_bytes": 507281408,
+        "direct_observed_peak_bytes": 381579264,
+        "time_ratio_author_over_direct": 1.2439970802311184,
+        "memory_ratio_author_over_direct": 1.3294260350583411,
+        "relative_peak_gap": 0.24779568503326657,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 3,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b64_r3",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r3",
+        "author_parent_seconds": 790.1391457000282,
+        "direct_parent_seconds": 641.868412300013,
+        "author_observed_peak_bytes": 507527168,
+        "direct_observed_peak_bytes": 382197760,
+        "time_ratio_author_over_direct": 1.2309986448292654,
+        "memory_ratio_author_over_direct": 1.3279176937091415,
+        "relative_peak_gap": 0.2469412790134616,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 4,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b64_r4",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r4",
+        "author_parent_seconds": 818.0203922000364,
+        "direct_parent_seconds": 624.7241029000143,
+        "author_observed_peak_bytes": 507572224,
+        "direct_observed_peak_bytes": 382570496,
+        "time_ratio_author_over_direct": 1.3094106476806753,
+        "memory_ratio_author_over_direct": 1.3267416837078831,
+        "relative_peak_gap": 0.24627377561148814,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      }
+    ],
+    "direct_peak_direction_counts": {
+      "higher": 0,
+      "lower": 5,
+      "equal": 0
+    },
+    "time_ratio": {
+      "n": 5,
+      "median": 1.2309986448292654,
+      "q25": 1.2272999305130743,
+      "q75": 1.2439970802311184,
+      "iqr": 0.016697149718044146,
+      "min": 1.2264162064797162,
+      "max": 1.3094106476806753,
+      "raw": [
+        1.2264162064797162,
+        1.2272999305130743,
+        1.2439970802311184,
+        1.2309986448292654,
+        1.3094106476806753
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.2472349693948535,
+      "conditional_percentile_95_ci": [
+        1.2276850043857512,
+        1.2791956363646906
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "memory_ratio": {
+      "n": 5,
+      "median": 1.3293387453557546,
+      "q25": 1.3279176937091415,
+      "q75": 1.3294260350583411,
+      "iqr": 0.0015083413491996378,
+      "min": 1.3267416837078831,
+      "max": 1.3306868656524258,
+      "raw": [
+        1.3293387453557546,
+        1.3306868656524258,
+        1.3294260350583411,
+        1.3279176937091415,
+        1.3267416837078831
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.3288215080980839,
+      "conditional_percentile_95_ci": [
+        1.3276824083462018,
+        1.3299127588553692
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "approximately_equal_peak_all_five_pairs": false,
+    "memory_match_rule": "Every one of five paired gaps abs(author-direct)/max(author,direct) <=5%; peak=max(full-lifecycle sampled RSS, Windows lifetime peak).",
+    "memory_interpretation": "measured_resource_budgets_differ_report_each_pair"
+  },
+  "yelp_f5/author32_vs_direct64_budget": {
+    "n_complete_pairs": 5,
+    "expected_pairs": 5,
+    "complete_five_pairs": true,
+    "pairs": [
+      {
+        "repeat": 0,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b32_r0",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r0",
+        "author_parent_seconds": 992.6632167999633,
+        "direct_parent_seconds": 663.8009735999512,
+        "author_observed_peak_bytes": 406609920,
+        "direct_observed_peak_bytes": 381444096,
+        "time_ratio_author_over_direct": 1.495422960012417,
+        "memory_ratio_author_over_direct": 1.0659751304683978,
+        "relative_peak_gap": 0.061891810214566335,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 1,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b32_r1",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r1",
+        "author_parent_seconds": 878.566394799971,
+        "direct_parent_seconds": 656.0453409000183,
+        "author_observed_peak_bytes": 408092672,
+        "direct_observed_peak_bytes": 381771776,
+        "time_ratio_author_over_direct": 1.3391854800686176,
+        "memory_ratio_author_over_direct": 1.068944059395318,
+        "relative_peak_gap": 0.06449735024891601,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 2,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b32_r2",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r2",
+        "author_parent_seconds": 862.7195932000177,
+        "direct_parent_seconds": 643.9174225000315,
+        "author_observed_peak_bytes": 406339584,
+        "direct_observed_peak_bytes": 381579264,
+        "time_ratio_author_over_direct": 1.339798494425697,
+        "memory_ratio_author_over_direct": 1.0648890606382637,
+        "relative_peak_gap": 0.06093504294181686,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 3,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b32_r3",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r3",
+        "author_parent_seconds": 881.8769297999679,
+        "direct_parent_seconds": 641.868412300013,
+        "author_observed_peak_bytes": 408154112,
+        "direct_observed_peak_bytes": 382197760,
+        "time_ratio_author_over_direct": 1.373921683791745,
+        "memory_ratio_author_over_direct": 1.0679134069231593,
+        "relative_peak_gap": 0.0635944885445623,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      },
+      {
+        "repeat": 4,
+        "author_directory": "yelp_f5_Q1_author_snapshot_b32_r4",
+        "direct_directory": "yelp_f5_Q1_streaming_direct_b64_r4",
+        "author_parent_seconds": 844.7512794000213,
+        "direct_parent_seconds": 624.7241029000143,
+        "author_observed_peak_bytes": 408035328,
+        "direct_observed_peak_bytes": 382570496,
+        "time_ratio_author_over_direct": 1.3521989554727039,
+        "memory_ratio_author_over_direct": 1.0665624565047482,
+        "relative_peak_gap": 0.06240840008833745,
+        "direct_peak_relation_to_author": "lower",
+        "within_5_percent_peak": false
+      }
+    ],
+    "direct_peak_direction_counts": {
+      "higher": 0,
+      "lower": 5,
+      "equal": 0
+    },
+    "time_ratio": {
+      "n": 5,
+      "median": 1.3521989554727039,
+      "q25": 1.339798494425697,
+      "q75": 1.373921683791745,
+      "iqr": 0.03412318936604786,
+      "min": 1.3391854800686176,
+      "max": 1.495422960012417,
+      "raw": [
+        1.495422960012417,
+        1.3391854800686176,
+        1.339798494425697,
+        1.373921683791745,
+        1.3521989554727039
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.3788891906795173,
+      "conditional_percentile_95_ci": [
+        1.3420237638327857,
+        1.4381989539045854
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "memory_ratio": {
+      "n": 5,
+      "median": 1.0665624565047482,
+      "q25": 1.0659751304683978,
+      "q75": 1.0679134069231593,
+      "iqr": 0.0019382764547615228,
+      "min": 1.0648890606382637,
+      "max": 1.068944059395318,
+      "raw": [
+        1.0659751304683978,
+        1.068944059395318,
+        1.0648890606382637,
+        1.0679134069231593,
+        1.0665624565047482
+      ],
+      "bootstrap_seed": 20261021,
+      "bootstrap_resamples": 10000,
+      "estimand": "Geometric mean of within-repeat author/candidate ratios",
+      "status": "complete_five_pairs",
+      "geometric_mean": 1.0668558659711025,
+      "conditional_percentile_95_ci": [
+        1.0656579611306856,
+        1.0681194578883095
+      ],
+      "ci_limit": "n=5 only; descriptive paired bootstrap, conditional on these runs; no simultaneous or universal claim"
+    },
+    "approximately_equal_peak_all_five_pairs": false,
+    "memory_match_rule": "Every one of five paired gaps abs(author-direct)/max(author,direct) <=5%; peak=max(full-lifecycle sampled RSS, Windows lifetime peak).",
+    "memory_interpretation": "measured_resource_budgets_differ_report_each_pair"
+  }
+}

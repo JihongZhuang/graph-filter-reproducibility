@@ -1,0 +1,2380 @@
+[
+  {
+    "figure": 1,
+    "title": "Evaluation and retained state",
+    "height": 890,
+    "objects": [
+      {
+        "name": "a-letter",
+        "type": "textbox",
+        "x": 30,
+        "y": 12,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "a",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "a-title",
+        "type": "textbox",
+        "x": 81,
+        "y": 12,
+        "w": 1679,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Evaluation",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "shared-condition",
+        "type": "textbox",
+        "x": 80,
+        "y": 70,
+        "w": 1620,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Fixed graph B, user signals X and polynomial coefficients",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "released-route",
+        "type": "textbox",
+        "x": 75,
+        "y": 145,
+        "w": 360,
+        "h": 44,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released implementation",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "direct-route",
+        "type": "textbox",
+        "x": 75,
+        "y": 355,
+        "w": 360,
+        "h": 44,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct evaluation",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "released-count",
+        "type": "textbox",
+        "x": 75,
+        "y": 192,
+        "w": 360,
+        "h": 72,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "2K sparse multiplications per batch",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "direct-count",
+        "type": "textbox",
+        "x": 75,
+        "y": 402,
+        "w": 360,
+        "h": 72,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "2d sparse multiplications per batch",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis",
+        "type": "rect",
+        "x": 490,
+        "y": 148,
+        "w": 330,
+        "h": 110,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7,
+        "text": "Build basis\nQ and T",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "projection",
+        "type": "rect",
+        "x": 945,
+        "y": 148,
+        "w": 330,
+        "h": 110,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7,
+        "text": "Evaluate\np(T̃)",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "backprojection",
+        "type": "rect",
+        "x": 1400,
+        "y": 148,
+        "w": 320,
+        "h": 110,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7,
+        "text": "Back-project\nreleased scores",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "propagate",
+        "type": "rect",
+        "x": 490,
+        "y": 358,
+        "w": 330,
+        "h": 110,
+        "fill": "#FCF1EB",
+        "stroke": "#D55E00",
+        "lw": 1.7,
+        "text": "Propagate\nZⱼ = PZⱼ₋₁",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "accumulate",
+        "type": "rect",
+        "x": 945,
+        "y": 358,
+        "w": 330,
+        "h": 110,
+        "fill": "#FCF1EB",
+        "stroke": "#D55E00",
+        "lw": 1.7,
+        "text": "Accumulate\nSⱼ = Sⱼ₋₁ + cⱼZⱼ",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "score",
+        "type": "rect",
+        "x": 1400,
+        "y": 358,
+        "w": 320,
+        "h": 110,
+        "fill": "#FCF1EB",
+        "stroke": "#D55E00",
+        "lw": 1.7,
+        "text": "Return\ndirect scores S",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "path-0",
+        "type": "connector",
+        "from": {
+          "left": 490,
+          "top": 148,
+          "width": 330,
+          "height": 110
+        },
+        "to": {
+          "left": 945,
+          "top": 148,
+          "width": 330,
+          "height": 110
+        },
+        "color": "#1A1A1A",
+        "kind": "straight"
+      },
+      {
+        "name": "path-1",
+        "type": "connector",
+        "from": {
+          "left": 945,
+          "top": 148,
+          "width": 330,
+          "height": 110
+        },
+        "to": {
+          "left": 1400,
+          "top": 148,
+          "width": 320,
+          "height": 110
+        },
+        "color": "#1A1A1A",
+        "kind": "straight"
+      },
+      {
+        "name": "path-2",
+        "type": "connector",
+        "from": {
+          "left": 490,
+          "top": 358,
+          "width": 330,
+          "height": 110
+        },
+        "to": {
+          "left": 945,
+          "top": 358,
+          "width": 330,
+          "height": 110
+        },
+        "color": "#1A1A1A",
+        "kind": "straight"
+      },
+      {
+        "name": "path-3",
+        "type": "connector",
+        "from": {
+          "left": 945,
+          "top": 358,
+          "width": 330,
+          "height": 110
+        },
+        "to": {
+          "left": 1400,
+          "top": 358,
+          "width": 320,
+          "height": 110
+        },
+        "color": "#1A1A1A",
+        "kind": "straight"
+      },
+      {
+        "name": "operator",
+        "type": "textbox",
+        "x": 490,
+        "y": 488,
+        "w": 1230,
+        "h": 42,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Implicit operator P(·) = Bᵀ(B·); predictor relationship in Eq. (6)",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-letter",
+        "type": "textbox",
+        "x": 30,
+        "y": 575,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "b",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "b-title",
+        "type": "textbox",
+        "x": 81,
+        "y": 575,
+        "w": 1669,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Retained response and projection state",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-label",
+        "type": "textbox",
+        "x": 75,
+        "y": 632,
+        "w": 760,
+        "h": 42,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released: degree-dependent basis",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "response-label",
+        "type": "textbox",
+        "x": 990,
+        "y": 632,
+        "w": 750,
+        "h": 42,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct: constant number of response blocks",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-cell-0",
+        "type": "rect",
+        "x": 75,
+        "y": 695,
+        "w": 112,
+        "h": 86,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7
+      },
+      {
+        "name": "basis-q-0",
+        "type": "textbox",
+        "x": 99,
+        "y": 706,
+        "w": 35,
+        "h": 40,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "q",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-index-0",
+        "type": "textbox",
+        "x": 118,
+        "y": 718,
+        "w": 65,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "1",
+        "size": 19.431693989071036,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-cell-1",
+        "type": "rect",
+        "x": 210,
+        "y": 695,
+        "w": 112,
+        "h": 86,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7
+      },
+      {
+        "name": "basis-q-1",
+        "type": "textbox",
+        "x": 234,
+        "y": 706,
+        "w": 35,
+        "h": 40,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "q",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-index-1",
+        "type": "textbox",
+        "x": 253,
+        "y": 718,
+        "w": 65,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "2",
+        "size": 19.431693989071036,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-cell-2",
+        "type": "rect",
+        "x": 345,
+        "y": 695,
+        "w": 112,
+        "h": 86,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7
+      },
+      {
+        "name": "basis-ellipsis",
+        "type": "textbox",
+        "x": 345,
+        "y": 705,
+        "w": 112,
+        "h": 60,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "…",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-cell-3",
+        "type": "rect",
+        "x": 480,
+        "y": 695,
+        "w": 112,
+        "h": 86,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7
+      },
+      {
+        "name": "basis-q-3",
+        "type": "textbox",
+        "x": 504,
+        "y": 706,
+        "w": 35,
+        "h": 40,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "q",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-index-3",
+        "type": "textbox",
+        "x": 523,
+        "y": 718,
+        "w": 65,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "K",
+        "size": 19.431693989071036,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-cell-4",
+        "type": "rect",
+        "x": 615,
+        "y": 695,
+        "w": 112,
+        "h": 86,
+        "fill": "#EDF4F8",
+        "stroke": "#0072B2",
+        "lw": 1.7
+      },
+      {
+        "name": "basis-q-4",
+        "type": "textbox",
+        "x": 639,
+        "y": 706,
+        "w": 35,
+        "h": 40,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "q",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-index-4",
+        "type": "textbox",
+        "x": 658,
+        "y": 718,
+        "w": 65,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "K+1",
+        "size": 19.431693989071036,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "response-0",
+        "type": "rect",
+        "x": 990,
+        "y": 695,
+        "w": 226,
+        "h": 86,
+        "fill": "#FCF1EB",
+        "stroke": "#D55E00",
+        "lw": 1.7,
+        "text": "Previous Z",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "response-1",
+        "type": "rect",
+        "x": 1235,
+        "y": 695,
+        "w": 226,
+        "h": 86,
+        "fill": "#FCF1EB",
+        "stroke": "#D55E00",
+        "lw": 1.7,
+        "text": "Current Z",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "response-2",
+        "type": "rect",
+        "x": 1480,
+        "y": 695,
+        "w": 226,
+        "h": 86,
+        "fill": "#FCF1EB",
+        "stroke": "#D55E00",
+        "lw": 1.7,
+        "text": "Accumulator S",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "basis-cost",
+        "type": "textbox",
+        "x": 75,
+        "y": 811,
+        "w": 650,
+        "h": 46,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "O(bKm + bn + bK²)",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Cambria Math"
+      },
+      {
+        "name": "direct-cost",
+        "type": "textbox",
+        "x": 990,
+        "y": 811,
+        "w": 716,
+        "h": 46,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "O(b(n + m))",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Cambria Math"
+      }
+    ]
+  },
+  {
+    "figure": 2,
+    "title": "Complete-process resources",
+    "height": 1050,
+    "objects": [
+      {
+        "name": "a-letter",
+        "type": "textbox",
+        "x": 28,
+        "y": 0,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "a",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "a-title",
+        "type": "textbox",
+        "x": 79,
+        "y": 0,
+        "w": 749,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Yelp",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "a-axis",
+        "type": "textbox",
+        "x": 113,
+        "y": 48,
+        "w": 700,
+        "h": 44,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Time (min)",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "a-median-0",
+        "type": "textbox",
+        "x": 201,
+        "y": 141.87109366776582,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "13.42",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "a-category-0",
+        "type": "textbox",
+        "x": 200,
+        "y": 477,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "a-median-1",
+        "type": "textbox",
+        "x": 413,
+        "y": 84.62705671556762,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "14.64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "a-category-1",
+        "type": "textbox",
+        "x": 412,
+        "y": 477,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 32",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "a-median-2",
+        "type": "textbox",
+        "x": 625,
+        "y": 192.42079198668267,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "10.73",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "a-category-2",
+        "type": "textbox",
+        "x": 624,
+        "y": 477,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "a-observations",
+        "type": "native-scatter",
+        "series": [
+          {
+            "name": "Released b = 64",
+            "xValues": [
+              0.88,
+              0.94,
+              1,
+              1.06,
+              1.12
+            ],
+            "values": [
+              13.568271,
+              13.419407,
+              13.350523,
+              13.168986,
+              13.633673
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 7,
+              "fill": "#0072B2"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 0",
+            "xValues": [
+              0.8,
+              1.2
+            ],
+            "values": [
+              13.419407,
+              13.419407
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Released b = 32",
+            "xValues": [
+              1.88,
+              1.94,
+              2,
+              2.06,
+              2.12
+            ],
+            "values": [
+              16.544387,
+              14.642773,
+              14.37866,
+              14.697949,
+              14.079188
+            ],
+            "marker": {
+              "symbol": "diamond",
+              "size": 7,
+              "fill": "#666666"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 1",
+            "xValues": [
+              1.8,
+              2.2
+            ],
+            "values": [
+              14.642773,
+              14.642773
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Direct b = 64",
+            "xValues": [
+              2.88,
+              2.94,
+              3,
+              3.06,
+              3.12
+            ],
+            "values": [
+              11.06335,
+              10.934089,
+              10.731957,
+              10.697807,
+              10.412068
+            ],
+            "marker": {
+              "symbol": "square",
+              "size": 7,
+              "fill": "#D55E00"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 2",
+            "xValues": [
+              2.8,
+              3.2
+            ],
+            "values": [
+              10.731957,
+              10.731957
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          }
+        ],
+        "position": {
+          "x": 95,
+          "y": 93,
+          "w": 755,
+          "h": 370
+        }
+      },
+      {
+        "name": "b-letter",
+        "type": "textbox",
+        "x": 945,
+        "y": 0,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "b",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "b-title",
+        "type": "textbox",
+        "x": 996,
+        "y": 0,
+        "w": 749,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Amazon-book",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "b-axis",
+        "type": "textbox",
+        "x": 1030,
+        "y": 48,
+        "w": 700,
+        "h": 44,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Time (min)",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "b-median-0",
+        "type": "textbox",
+        "x": 1118,
+        "y": 105.9423811682442,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "32.50",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-category-0",
+        "type": "textbox",
+        "x": 1117,
+        "y": 477,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-median-1",
+        "type": "textbox",
+        "x": 1330,
+        "y": 100.60471226275087,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "31.12",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-category-1",
+        "type": "textbox",
+        "x": 1329,
+        "y": 477,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 32",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-median-2",
+        "type": "textbox",
+        "x": 1542,
+        "y": 188.82679537350776,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "24.38",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-category-2",
+        "type": "textbox",
+        "x": 1541,
+        "y": 477,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "b-observations",
+        "type": "native-scatter",
+        "series": [
+          {
+            "name": "Released b = 64",
+            "xValues": [
+              0.88,
+              0.94,
+              1,
+              1.06,
+              1.12
+            ],
+            "values": [
+              33.907288,
+              32.023557,
+              32.496808,
+              31.248788,
+              34.356793
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 7,
+              "fill": "#0072B2"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 0",
+            "xValues": [
+              0.8,
+              1.2
+            ],
+            "values": [
+              32.496808,
+              32.496808
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Released b = 32",
+            "xValues": [
+              1.88,
+              1.94,
+              2,
+              2.06,
+              2.12
+            ],
+            "values": [
+              33.040236,
+              30.563036,
+              31.124912,
+              34.95992,
+              30.252459
+            ],
+            "marker": {
+              "symbol": "diamond",
+              "size": 7,
+              "fill": "#666666"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 1",
+            "xValues": [
+              1.8,
+              2.2
+            ],
+            "values": [
+              31.124912,
+              31.124912
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Direct b = 64",
+            "xValues": [
+              2.88,
+              2.94,
+              3,
+              3.06,
+              3.12
+            ],
+            "values": [
+              24.991323,
+              22.437862,
+              21.97761,
+              24.86242,
+              24.375596
+            ],
+            "marker": {
+              "symbol": "square",
+              "size": 7,
+              "fill": "#D55E00"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 2",
+            "xValues": [
+              2.8,
+              3.2
+            ],
+            "values": [
+              24.375596,
+              24.375596
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          }
+        ],
+        "position": {
+          "x": 1012,
+          "y": 93,
+          "w": 755,
+          "h": 370
+        }
+      },
+      {
+        "name": "c-letter",
+        "type": "textbox",
+        "x": 28,
+        "y": 510,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "c",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "c-title",
+        "type": "textbox",
+        "x": 79,
+        "y": 510,
+        "w": 749,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Yelp",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "c-axis",
+        "type": "textbox",
+        "x": 113,
+        "y": 558,
+        "w": 700,
+        "h": 44,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Peak process memory (MiB)",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "c-median-0",
+        "type": "textbox",
+        "x": 201,
+        "y": 608.1682386363636,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "484.02",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "c-category-0",
+        "type": "textbox",
+        "x": 200,
+        "y": 987,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "c-median-1",
+        "type": "textbox",
+        "x": 413,
+        "y": 669.4670596590909,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "389.13",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "c-category-1",
+        "type": "textbox",
+        "x": 412,
+        "y": 987,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 32",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "c-median-2",
+        "type": "textbox",
+        "x": 625,
+        "y": 685.17078125,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "364.09",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "c-category-2",
+        "type": "textbox",
+        "x": 624,
+        "y": 987,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "c-observations",
+        "type": "native-scatter",
+        "series": [
+          {
+            "name": "Released b = 64",
+            "xValues": [
+              0.88,
+              0.94,
+              1,
+              1.06,
+              1.12
+            ],
+            "values": [
+              483.578125,
+              484.484375,
+              483.78125,
+              484.015625,
+              484.058594
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 7,
+              "fill": "#0072B2"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 0",
+            "xValues": [
+              0.8,
+              1.2
+            ],
+            "values": [
+              484.015625,
+              484.015625
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Released b = 32",
+            "xValues": [
+              1.88,
+              1.94,
+              2,
+              2.06,
+              2.12
+            ],
+            "values": [
+              387.773438,
+              389.1875,
+              387.515625,
+              389.246094,
+              389.132813
+            ],
+            "marker": {
+              "symbol": "diamond",
+              "size": 7,
+              "fill": "#666666"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 1",
+            "xValues": [
+              1.8,
+              2.2
+            ],
+            "values": [
+              389.132813,
+              389.132813
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Direct b = 64",
+            "xValues": [
+              2.88,
+              2.94,
+              3,
+              3.06,
+              3.12
+            ],
+            "values": [
+              363.773438,
+              364.085938,
+              363.902344,
+              364.492188,
+              364.847656
+            ],
+            "marker": {
+              "symbol": "square",
+              "size": 7,
+              "fill": "#D55E00"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 2",
+            "xValues": [
+              2.8,
+              3.2
+            ],
+            "values": [
+              364.085938,
+              364.085938
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          }
+        ],
+        "position": {
+          "x": 95,
+          "y": 603,
+          "w": 755,
+          "h": 370
+        }
+      },
+      {
+        "name": "d-letter",
+        "type": "textbox",
+        "x": 945,
+        "y": 510,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "d",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "d-title",
+        "type": "textbox",
+        "x": 996,
+        "y": 510,
+        "w": 749,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Amazon-book",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "d-axis",
+        "type": "textbox",
+        "x": 1030,
+        "y": 558,
+        "w": 700,
+        "h": 44,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Peak process memory (MiB)",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "d-median-0",
+        "type": "textbox",
+        "x": 1118,
+        "y": 615.7406874999999,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "641.72",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "d-category-0",
+        "type": "textbox",
+        "x": 1117,
+        "y": 987,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "d-median-1",
+        "type": "textbox",
+        "x": 1330,
+        "y": 682.44203125,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "500.92",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "d-category-1",
+        "type": "textbox",
+        "x": 1329,
+        "y": 987,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Released\nb = 32",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "d-median-2",
+        "type": "textbox",
+        "x": 1542,
+        "y": 671.764875,
+        "w": 186,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "525.80",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "d-category-2",
+        "type": "textbox",
+        "x": 1541,
+        "y": 987,
+        "w": 188,
+        "h": 58,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct\nb = 64",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "d-observations",
+        "type": "native-scatter",
+        "series": [
+          {
+            "name": "Released b = 64",
+            "xValues": [
+              0.88,
+              0.94,
+              1,
+              1.06,
+              1.12
+            ],
+            "values": [
+              641.722656,
+              641.367188,
+              644.617188,
+              641.4375,
+              641.71875
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 7,
+              "fill": "#0072B2"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 0",
+            "xValues": [
+              0.8,
+              1.2
+            ],
+            "values": [
+              641.71875,
+              641.71875
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Released b = 32",
+            "xValues": [
+              1.88,
+              1.94,
+              2,
+              2.06,
+              2.12
+            ],
+            "values": [
+              503.300781,
+              500.398438,
+              500.917969,
+              503.175781,
+              500.488281
+            ],
+            "marker": {
+              "symbol": "diamond",
+              "size": 7,
+              "fill": "#666666"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 1",
+            "xValues": [
+              1.8,
+              2.2
+            ],
+            "values": [
+              500.917969,
+              500.917969
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "Direct b = 64",
+            "xValues": [
+              2.88,
+              2.94,
+              3,
+              3.06,
+              3.12
+            ],
+            "values": [
+              525.921875,
+              525.800781,
+              525.570313,
+              525.402344,
+              525.910156
+            ],
+            "marker": {
+              "symbol": "square",
+              "size": 7,
+              "fill": "#D55E00"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "Median 2",
+            "xValues": [
+              2.8,
+              3.2
+            ],
+            "values": [
+              525.800781,
+              525.800781
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          }
+        ],
+        "position": {
+          "x": 1012,
+          "y": 603,
+          "w": 755,
+          "h": 370
+        }
+      }
+    ]
+  },
+  {
+    "figure": 3,
+    "title": "Recommendation-quality differences",
+    "height": 785,
+    "objects": [
+      {
+        "name": "a-letter",
+        "type": "textbox",
+        "x": 245,
+        "y": 15,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "a",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "a-title",
+        "type": "textbox",
+        "x": 296,
+        "y": 15,
+        "w": 749,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Recall@20 difference (percentage points)",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "b-letter",
+        "type": "textbox",
+        "x": 1165,
+        "y": 15,
+        "w": 42,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "b",
+        "size": 27.759562841530055,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "b-title",
+        "type": "textbox",
+        "x": 1216,
+        "y": 15,
+        "w": 534,
+        "h": 48,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Top20 set overlap (%)",
+        "size": 24.2896174863388,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "left",
+        "font": "Arial"
+      },
+      {
+        "name": "yelp_f5-name",
+        "type": "textbox",
+        "x": 5,
+        "y": 275,
+        "w": 226,
+        "h": 34,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Yelp",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "right",
+        "font": "Arial"
+      },
+      {
+        "name": "yelp_f5-n",
+        "type": "textbox",
+        "x": 5,
+        "y": 311,
+        "w": 226,
+        "h": 34,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "n = 31,668",
+        "size": 21.166666666666664,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "right",
+        "font": "Arial"
+      },
+      {
+        "name": "yelp_f5-delta",
+        "type": "textbox",
+        "x": 473,
+        "y": 233,
+        "w": 155,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "-0.10",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "yelp_f5-overlap-value",
+        "type": "textbox",
+        "x": 1585,
+        "y": 233,
+        "w": 135,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "85.20",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "amazon_f2-name",
+        "type": "textbox",
+        "x": 5,
+        "y": 504,
+        "w": 226,
+        "h": 34,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Amazon-book",
+        "size": 22.55464480874317,
+        "color": "#1A1A1A",
+        "bold": true,
+        "align": "right",
+        "font": "Arial"
+      },
+      {
+        "name": "amazon_f2-n",
+        "type": "textbox",
+        "x": 5,
+        "y": 540,
+        "w": 226,
+        "h": 34,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "n = 52,643",
+        "size": 21.166666666666664,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "right",
+        "font": "Arial"
+      },
+      {
+        "name": "amazon_f2-delta",
+        "type": "textbox",
+        "x": 707,
+        "y": 462,
+        "w": 155,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "-0.02",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "amazon_f2-overlap-value",
+        "type": "textbox",
+        "x": 1650,
+        "y": 462,
+        "w": 135,
+        "h": 32,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "95.89",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "quality-CI",
+        "type": "native-scatter",
+        "series": [
+          {
+            "name": "Zero difference",
+            "xValues": [
+              0,
+              0
+            ],
+            "values": [
+              0.5,
+              2.5
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#666666",
+              "width": 1.4,
+              "style": "dashed"
+            }
+          },
+          {
+            "name": "yelp_f5 CI",
+            "xValues": [
+              -0.15087459,
+              -0.04886932
+            ],
+            "values": [
+              2,
+              2
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "yelp_f5 cap0",
+            "xValues": [
+              -0.15087459,
+              -0.15087459
+            ],
+            "values": [
+              1.96,
+              2.04
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.5,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "yelp_f5 cap1",
+            "xValues": [
+              -0.04886932,
+              -0.04886932
+            ],
+            "values": [
+              1.96,
+              2.04
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.5,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "yelp_f5 mean",
+            "xValues": [
+              -0.09987196
+            ],
+            "values": [
+              2
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 8,
+              "fill": "#1A1A1A"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "amazon_f2 CI",
+            "xValues": [
+              -0.04089835,
+              0.00190749
+            ],
+            "values": [
+              1,
+              1
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.8,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "amazon_f2 cap0",
+            "xValues": [
+              -0.04089835,
+              -0.04089835
+            ],
+            "values": [
+              0.96,
+              1.04
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.5,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "amazon_f2 cap1",
+            "xValues": [
+              0.00190749,
+              0.00190749
+            ],
+            "values": [
+              0.96,
+              1.04
+            ],
+            "marker": {
+              "symbol": "none",
+              "size": 2
+            },
+            "line": {
+              "fill": "#1A1A1A",
+              "width": 1.5,
+              "style": "solid"
+            }
+          },
+          {
+            "name": "amazon_f2 mean",
+            "xValues": [
+              -0.01949543
+            ],
+            "values": [
+              1
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 8,
+              "fill": "#1A1A1A"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          }
+        ],
+        "position": {
+          "x": 238,
+          "y": 170,
+          "w": 770,
+          "h": 504
+        }
+      },
+      {
+        "name": "set-overlap",
+        "type": "native-scatter",
+        "series": [
+          {
+            "name": "yelp_f5 overlap",
+            "xValues": [
+              85.198307
+            ],
+            "values": [
+              2
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 8,
+              "fill": "#1A1A1A"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          },
+          {
+            "name": "amazon_f2 overlap",
+            "xValues": [
+              95.890527
+            ],
+            "values": [
+              1
+            ],
+            "marker": {
+              "symbol": "circle",
+              "size": 8,
+              "fill": "#1A1A1A"
+            },
+            "line": {
+              "fill": "none",
+              "width": 0
+            }
+          }
+        ],
+        "position": {
+          "x": 1150,
+          "y": 170,
+          "w": 600,
+          "h": 504
+        }
+      },
+      {
+        "name": "quality-estimand",
+        "type": "textbox",
+        "x": 250,
+        "y": 710,
+        "w": 770,
+        "h": 40,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "Direct − released; conditional 95.00% iid-user intervals",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      },
+      {
+        "name": "overlap-definition",
+        "type": "textbox",
+        "x": 1155,
+        "y": 710,
+        "w": 595,
+        "h": 40,
+        "fill": "none",
+        "stroke": "none",
+        "lw": 1.7,
+        "text": "100.00% = identical sets",
+        "size": 21.51366120218579,
+        "color": "#1A1A1A",
+        "bold": false,
+        "align": "center",
+        "font": "Arial"
+      }
+    ]
+  }
+]

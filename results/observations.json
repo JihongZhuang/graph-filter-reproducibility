@@ -1,0 +1,1674 @@
+[
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 2034.4372535999864,
+    "observed_process_peak_bytes": 672894976,
+    "actual_SpMM": 4938,
+    "phases": {
+      "input_validation_seconds": 0.012436799996066839,
+      "data_io_seconds": 0.08197929995367303,
+      "normalization_seconds": 0.07087580004008487,
+      "conversion_seconds": 0.15025490004336461,
+      "power_init_seconds": 0.012883500021416694,
+      "input_seconds": 16.553405800659675,
+      "request_seconds_including_bind": 1959.357903500495,
+      "full_score_digest_seconds": 23.192646599607542,
+      "mask_top20_seconds": 29.896610301162582,
+      "metrics_seconds": 0.36333079932956025,
+      "output_collection_seconds": 0.009948199905920774,
+      "checkpoint_io_seconds": 1.0234008998377249
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317473,
+        "recall20": 0.07526982697431306,
+        "ndcg10": 0.05166979699437705,
+        "ndcg20": 0.06202924187746306
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b64_r0"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1499.4793533999473,
+    "observed_process_peak_bytes": 551469056,
+    "actual_SpMM": 3292,
+    "phases": {
+      "input_validation_seconds": 0.009489100018981844,
+      "data_io_seconds": 0.08564850001130253,
+      "normalization_seconds": 0.056279300013557076,
+      "conversion_seconds": 0.12279739999212325,
+      "power_init_seconds": 0.0076274999883025885,
+      "input_seconds": 17.157480099063832,
+      "request_seconds_including_bind": 1422.0652137995348,
+      "full_score_digest_seconds": 24.20962780097034,
+      "mask_top20_seconds": 30.583304898405913,
+      "metrics_seconds": 0.38903910072986037,
+      "output_collection_seconds": 0.00995060004061088,
+      "checkpoint_io_seconds": 1.0543835999560542
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.048166129925654146,
+        "recall20": 0.07507487266620598,
+        "ndcg10": 0.05180670464497454,
+        "ndcg20": 0.062050702049199866
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b64_r0"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1982.4141819999786,
+    "observed_process_peak_bytes": 527749120,
+    "actual_SpMM": 9876,
+    "phases": {
+      "input_validation_seconds": 0.011047900014091283,
+      "data_io_seconds": 0.08585680002579466,
+      "normalization_seconds": 0.060393800027668476,
+      "conversion_seconds": 0.12644379999255762,
+      "power_init_seconds": 0.010736300027929246,
+      "input_seconds": 17.02359759947285,
+      "request_seconds_including_bind": 1904.6782219014713,
+      "full_score_digest_seconds": 24.33117750065867,
+      "mask_top20_seconds": 30.36339730065083,
+      "metrics_seconds": 0.6942663990776055,
+      "output_collection_seconds": 0.01957429834874347,
+      "checkpoint_io_seconds": 1.0982918997760862
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317472,
+        "recall20": 0.07526982697431321,
+        "ndcg10": 0.05166979699437713,
+        "ndcg20": 0.06202924187746308
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b32_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 992.6632167999633,
+    "observed_process_peak_bytes": 406609920,
+    "actual_SpMM": 11880,
+    "phases": {
+      "input_validation_seconds": 0.013443100033327937,
+      "data_io_seconds": 0.09716619999380782,
+      "normalization_seconds": 0.0655764999683015,
+      "conversion_seconds": 0.12536199996247888,
+      "power_init_seconds": 0.00783030001912266,
+      "input_seconds": 4.616615901235491,
+      "request_seconds_including_bind": 968.5807747991057,
+      "full_score_digest_seconds": 6.2620233001653105,
+      "mask_top20_seconds": 8.126773199532181,
+      "metrics_seconds": 0.4165010012802668,
+      "output_collection_seconds": 0.011922699399292469,
+      "checkpoint_io_seconds": 0.5743704998749308
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416114,
+        "recall20": 0.07048911842922274,
+        "ndcg10": 0.048320488666914074,
+        "ndcg20": 0.05858298700888349
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b32_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 663.8009735999512,
+    "observed_process_peak_bytes": 381444096,
+    "actual_SpMM": 4950,
+    "phases": {
+      "input_validation_seconds": 0.005167700001038611,
+      "data_io_seconds": 0.04266140004619956,
+      "normalization_seconds": 0.02662910002982244,
+      "conversion_seconds": 0.06620489998022094,
+      "power_init_seconds": 0.0047627000021748245,
+      "input_seconds": 4.301317100238521,
+      "request_seconds_including_bind": 642.7871462995536,
+      "full_score_digest_seconds": 5.67795739939902,
+      "mask_top20_seconds": 7.261796800419688,
+      "metrics_seconds": 0.20738959958544,
+      "output_collection_seconds": 0.005596499366220087,
+      "checkpoint_io_seconds": 0.5754445000784472
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983808,
+        "recall20": 0.06949039885159486,
+        "ndcg10": 0.04775106057351299,
+        "ndcg20": 0.05787661689829024
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b64_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 814.0962718999945,
+    "observed_process_peak_bytes": 507068416,
+    "actual_SpMM": 5940,
+    "phases": {
+      "input_validation_seconds": 0.006179400021210313,
+      "data_io_seconds": 0.04368159995647147,
+      "normalization_seconds": 0.02752550004515797,
+      "conversion_seconds": 0.07011289999354631,
+      "power_init_seconds": 0.004411100002471358,
+      "input_seconds": 4.437137300788891,
+      "request_seconds_including_bind": 792.7465181006119,
+      "full_score_digest_seconds": 5.812718800152652,
+      "mask_top20_seconds": 7.362387400178704,
+      "metrics_seconds": 0.20962529996177182,
+      "output_collection_seconds": 0.005557101161684841,
+      "checkpoint_io_seconds": 0.537379199930001
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.041880279844161136,
+        "recall20": 0.0704891184292227,
+        "ndcg10": 0.048320488666914026,
+        "ndcg20": 0.0585829870088835
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b64_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 878.566394799971,
+    "observed_process_peak_bytes": 408092672,
+    "actual_SpMM": 11880,
+    "phases": {
+      "input_validation_seconds": 0.005851099966093898,
+      "data_io_seconds": 0.04524789995048195,
+      "normalization_seconds": 0.02655020001111552,
+      "conversion_seconds": 0.07120860001305118,
+      "power_init_seconds": 0.004306800023186952,
+      "input_seconds": 4.181662300601602,
+      "request_seconds_including_bind": 857.1701443013153,
+      "full_score_digest_seconds": 5.764807900064625,
+      "mask_top20_seconds": 7.4380342999938875,
+      "metrics_seconds": 0.3828228996717371,
+      "output_collection_seconds": 0.010775001253932714,
+      "checkpoint_io_seconds": 0.5323841000790708
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416114,
+        "recall20": 0.07048911842922274,
+        "ndcg10": 0.048320488666914074,
+        "ndcg20": 0.05858298700888349
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b32_r1"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 805.1644013000187,
+    "observed_process_peak_bytes": 508018688,
+    "actual_SpMM": 5940,
+    "phases": {
+      "input_validation_seconds": 0.005725299997720867,
+      "data_io_seconds": 0.045961399970110506,
+      "normalization_seconds": 0.02679919998627156,
+      "conversion_seconds": 0.06384800001978874,
+      "power_init_seconds": 0.0044575000065378845,
+      "input_seconds": 4.3552985999849625,
+      "request_seconds_including_bind": 784.3469837009325,
+      "full_score_digest_seconds": 5.6952432006946765,
+      "mask_top20_seconds": 7.097043600748293,
+      "metrics_seconds": 0.20594419940607622,
+      "output_collection_seconds": 0.005575398914515972,
+      "checkpoint_io_seconds": 0.5241021999390796
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.041880279844161136,
+        "recall20": 0.0704891184292227,
+        "ndcg10": 0.048320488666914026,
+        "ndcg20": 0.0585829870088835
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b64_r1"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 656.0453409000183,
+    "observed_process_peak_bytes": 381771776,
+    "actual_SpMM": 4950,
+    "phases": {
+      "input_validation_seconds": 0.005878099997062236,
+      "data_io_seconds": 0.04532539995852858,
+      "normalization_seconds": 0.02595169999403879,
+      "conversion_seconds": 0.07140080002136528,
+      "power_init_seconds": 0.004368000023532659,
+      "input_seconds": 4.228127000387758,
+      "request_seconds_including_bind": 635.4310336999479,
+      "full_score_digest_seconds": 5.556268999760505,
+      "mask_top20_seconds": 7.030050599889364,
+      "metrics_seconds": 0.20298289984930307,
+      "output_collection_seconds": 0.005403599934652448,
+      "checkpoint_io_seconds": 0.5528966001584195
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983808,
+        "recall20": 0.06949039885159486,
+        "ndcg10": 0.04775106057351299,
+        "ndcg20": 0.05787661689829024
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b64_r1"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1346.2716905999696,
+    "observed_process_peak_bytes": 551342080,
+    "actual_SpMM": 3292,
+    "phases": {
+      "input_validation_seconds": 0.00897399999666959,
+      "data_io_seconds": 0.07656529999803752,
+      "normalization_seconds": 0.0565871000289917,
+      "conversion_seconds": 0.12948360003065318,
+      "power_init_seconds": 0.007807099958881736,
+      "input_seconds": 15.51930739992531,
+      "request_seconds_including_bind": 1275.783364000381,
+      "full_score_digest_seconds": 21.97391569899628,
+      "mask_top20_seconds": 27.776147101074457,
+      "metrics_seconds": 0.3508362001157366,
+      "output_collection_seconds": 0.009201400331221521,
+      "checkpoint_io_seconds": 0.9687878001132049
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.048166129925654146,
+        "recall20": 0.07507487266620598,
+        "ndcg10": 0.05180670464497454,
+        "ndcg20": 0.062050702049199866
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b64_r1"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1921.4133922000183,
+    "observed_process_peak_bytes": 672522240,
+    "actual_SpMM": 4938,
+    "phases": {
+      "input_validation_seconds": 0.008799700008239597,
+      "data_io_seconds": 0.07734810002148151,
+      "normalization_seconds": 0.05856159998802468,
+      "conversion_seconds": 0.13141390000237152,
+      "power_init_seconds": 0.0077692000195384026,
+      "input_seconds": 16.05981619883096,
+      "request_seconds_including_bind": 1848.8081581994193,
+      "full_score_digest_seconds": 22.60602400091011,
+      "mask_top20_seconds": 28.67363979970105,
+      "metrics_seconds": 0.3546194002847187,
+      "output_collection_seconds": 0.010102799627929926,
+      "checkpoint_io_seconds": 0.9683095999644138
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317473,
+        "recall20": 0.07526982697431306,
+        "ndcg10": 0.05166979699437705,
+        "ndcg20": 0.06202924187746306
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b64_r1"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1833.7821656000451,
+    "observed_process_peak_bytes": 524705792,
+    "actual_SpMM": 9876,
+    "phases": {
+      "input_validation_seconds": 0.009074400004465133,
+      "data_io_seconds": 0.08003760001156479,
+      "normalization_seconds": 0.05972610000753775,
+      "conversion_seconds": 0.1287834999966435,
+      "power_init_seconds": 0.007944100012537092,
+      "input_seconds": 16.130608499457594,
+      "request_seconds_including_bind": 1760.1307410999434,
+      "full_score_digest_seconds": 22.93941089953296,
+      "mask_top20_seconds": 28.857089301629458,
+      "metrics_seconds": 0.6511365997721441,
+      "output_collection_seconds": 0.01811150077264756,
+      "checkpoint_io_seconds": 1.0181779001723044
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317472,
+        "recall20": 0.07526982697431321,
+        "ndcg10": 0.05166979699437713,
+        "ndcg20": 0.06202924187746308
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b32_r1"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1867.4947175999987,
+    "observed_process_peak_bytes": 525250560,
+    "actual_SpMM": 9876,
+    "phases": {
+      "input_validation_seconds": 0.009016499971039593,
+      "data_io_seconds": 0.07716089999303222,
+      "normalization_seconds": 0.058384599979035556,
+      "conversion_seconds": 0.12989899999229237,
+      "power_init_seconds": 0.00841249997029081,
+      "input_seconds": 16.453533799794968,
+      "request_seconds_including_bind": 1793.0019833004335,
+      "full_score_digest_seconds": 23.175888400757685,
+      "mask_top20_seconds": 29.08569149824325,
+      "metrics_seconds": 0.667600599990692,
+      "output_collection_seconds": 0.019511302176397294,
+      "checkpoint_io_seconds": 1.0308007000130601
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317472,
+        "recall20": 0.07526982697431321,
+        "ndcg10": 0.05166979699437713,
+        "ndcg20": 0.06202924187746308
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b32_r2"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1949.8084769000416,
+    "observed_process_peak_bytes": 675930112,
+    "actual_SpMM": 4938,
+    "phases": {
+      "input_validation_seconds": 0.009124699980020523,
+      "data_io_seconds": 0.08126730000367388,
+      "normalization_seconds": 0.05875749996630475,
+      "conversion_seconds": 0.13069919997360557,
+      "power_init_seconds": 0.008288500015623868,
+      "input_seconds": 15.906900300004054,
+      "request_seconds_including_bind": 1877.182488900493,
+      "full_score_digest_seconds": 22.712635099655017,
+      "mask_top20_seconds": 28.73971310071647,
+      "metrics_seconds": 0.35373670083936304,
+      "output_collection_seconds": 0.00927739858161658,
+      "checkpoint_io_seconds": 1.002621499937959
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317473,
+        "recall20": 0.07526982697431306,
+        "ndcg10": 0.05166979699437705,
+        "ndcg20": 0.06202924187746306
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b64_r2"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1318.656616100052,
+    "observed_process_peak_bytes": 551100416,
+    "actual_SpMM": 3292,
+    "phases": {
+      "input_validation_seconds": 0.009020500001497567,
+      "data_io_seconds": 0.08155220001935959,
+      "normalization_seconds": 0.061122800048906356,
+      "conversion_seconds": 0.13255700003355742,
+      "power_init_seconds": 0.0081297000288032,
+      "input_seconds": 15.121211999794468,
+      "request_seconds_including_bind": 1249.4052891008323,
+      "full_score_digest_seconds": 21.820699299685657,
+      "mask_top20_seconds": 27.189584199979436,
+      "metrics_seconds": 0.3422252999152988,
+      "output_collection_seconds": 0.008996299118734896,
+      "checkpoint_io_seconds": 0.9326517000445165
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.048166129925654146,
+        "recall20": 0.07507487266620598,
+        "ndcg10": 0.05180670464497454,
+        "ndcg20": 0.062050702049199866
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b64_r2"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 643.9174225000315,
+    "observed_process_peak_bytes": 381579264,
+    "actual_SpMM": 4950,
+    "phases": {
+      "input_validation_seconds": 0.005803000007290393,
+      "data_io_seconds": 0.045296399970538914,
+      "normalization_seconds": 0.02687190001597628,
+      "conversion_seconds": 0.07222510001156479,
+      "power_init_seconds": 0.004709700006060302,
+      "input_seconds": 4.161685500526801,
+      "request_seconds_including_bind": 623.6655218004016,
+      "full_score_digest_seconds": 5.504254399333149,
+      "mask_top20_seconds": 6.916851500805933,
+      "metrics_seconds": 0.19886949891224504,
+      "output_collection_seconds": 0.0052757004159502685,
+      "checkpoint_io_seconds": 0.5374130997806787
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983808,
+        "recall20": 0.06949039885159486,
+        "ndcg10": 0.04775106057351299,
+        "ndcg20": 0.05787661689829024
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b64_r2"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 801.0313934999867,
+    "observed_process_peak_bytes": 507281408,
+    "actual_SpMM": 5940,
+    "phases": {
+      "input_validation_seconds": 0.0051454000058583915,
+      "data_io_seconds": 0.04632580000907183,
+      "normalization_seconds": 0.03075489995535463,
+      "conversion_seconds": 0.06836720003047958,
+      "power_init_seconds": 0.00439750001532957,
+      "input_seconds": 4.179368400247768,
+      "request_seconds_including_bind": 780.6461614003056,
+      "full_score_digest_seconds": 5.560728900250979,
+      "mask_top20_seconds": 6.968537500011735,
+      "metrics_seconds": 0.201671099930536,
+      "output_collection_seconds": 0.005433000682387501,
+      "checkpoint_io_seconds": 0.5263297000783496
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.041880279844161136,
+        "recall20": 0.0704891184292227,
+        "ndcg10": 0.048320488666914026,
+        "ndcg20": 0.0585829870088835
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b64_r2"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 862.7195932000177,
+    "observed_process_peak_bytes": 406339584,
+    "actual_SpMM": 11880,
+    "phases": {
+      "input_validation_seconds": 0.009667099977377802,
+      "data_io_seconds": 0.044371799973305315,
+      "normalization_seconds": 0.027014399995096028,
+      "conversion_seconds": 0.06767969997599721,
+      "power_init_seconds": 0.004330299969296902,
+      "input_seconds": 4.102755000116304,
+      "request_seconds_including_bind": 841.7749675007653,
+      "full_score_digest_seconds": 5.61426709924126,
+      "mask_top20_seconds": 7.249181399412919,
+      "metrics_seconds": 0.3705441993079148,
+      "output_collection_seconds": 0.010652000433765352,
+      "checkpoint_io_seconds": 0.5219465999980457
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416114,
+        "recall20": 0.07048911842922274,
+        "ndcg10": 0.048320488666914074,
+        "ndcg20": 0.05858298700888349
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b32_r2"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 790.1391457000282,
+    "observed_process_peak_bytes": 507527168,
+    "actual_SpMM": 5940,
+    "phases": {
+      "input_validation_seconds": 0.005502600048203021,
+      "data_io_seconds": 0.04223880002973601,
+      "normalization_seconds": 0.027041100023780018,
+      "conversion_seconds": 0.07147480000276119,
+      "power_init_seconds": 0.004309000039938837,
+      "input_seconds": 4.272505399305373,
+      "request_seconds_including_bind": 769.365532099735,
+      "full_score_digest_seconds": 5.709258700138889,
+      "mask_top20_seconds": 7.081002000370063,
+      "metrics_seconds": 0.20774309989064932,
+      "output_collection_seconds": 0.005475000303704292,
+      "checkpoint_io_seconds": 0.521283499954734
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.041880279844161136,
+        "recall20": 0.0704891184292227,
+        "ndcg10": 0.048320488666914026,
+        "ndcg20": 0.0585829870088835
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b64_r3"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 641.868412300013,
+    "observed_process_peak_bytes": 382197760,
+    "actual_SpMM": 4950,
+    "phases": {
+      "input_validation_seconds": 0.005867599975317717,
+      "data_io_seconds": 0.046767499996349216,
+      "normalization_seconds": 0.02551900001708418,
+      "conversion_seconds": 0.06514810002408922,
+      "power_init_seconds": 0.00426850002259016,
+      "input_seconds": 4.156377498875372,
+      "request_seconds_including_bind": 621.5113920006552,
+      "full_score_digest_seconds": 5.5449330997653306,
+      "mask_top20_seconds": 6.971756299608387,
+      "metrics_seconds": 0.20260550040984526,
+      "output_collection_seconds": 0.005531499860808253,
+      "checkpoint_io_seconds": 0.5644186998833902
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983808,
+        "recall20": 0.06949039885159486,
+        "ndcg10": 0.04775106057351299,
+        "ndcg20": 0.05787661689829024
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b64_r3"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 881.8769297999679,
+    "observed_process_peak_bytes": 408154112,
+    "actual_SpMM": 11880,
+    "phases": {
+      "input_validation_seconds": 0.006214699998963624,
+      "data_io_seconds": 0.044717300042975694,
+      "normalization_seconds": 0.027383800013922155,
+      "conversion_seconds": 0.07039070001337677,
+      "power_init_seconds": 0.004408500040881336,
+      "input_seconds": 4.110175399924628,
+      "request_seconds_including_bind": 860.832242200675,
+      "full_score_digest_seconds": 5.68597469991073,
+      "mask_top20_seconds": 7.30317319923779,
+      "metrics_seconds": 0.37407620094018057,
+      "output_collection_seconds": 0.011326800973620266,
+      "checkpoint_io_seconds": 0.5341970999143086
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416114,
+        "recall20": 0.07048911842922274,
+        "ndcg10": 0.048320488666914074,
+        "ndcg20": 0.05858298700888349
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b32_r3"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 2097.5951710999943,
+    "observed_process_peak_bytes": 527618048,
+    "actual_SpMM": 9876,
+    "phases": {
+      "input_validation_seconds": 0.010370700038038194,
+      "data_io_seconds": 0.0806688999873586,
+      "normalization_seconds": 0.059413300012238324,
+      "conversion_seconds": 0.12626410002121702,
+      "power_init_seconds": 0.008146599982865155,
+      "input_seconds": 17.639921398367733,
+      "request_seconds_including_bind": 2017.1358646989684,
+      "full_score_digest_seconds": 24.799431398161687,
+      "mask_top20_seconds": 31.826475599431433,
+      "metrics_seconds": 0.7253726999624632,
+      "output_collection_seconds": 0.020726498740259558,
+      "checkpoint_io_seconds": 1.17462110001361
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317472,
+        "recall20": 0.07526982697431321,
+        "ndcg10": 0.05166979699437713,
+        "ndcg20": 0.06202924187746308
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b32_r3"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1491.7451785000158,
+    "observed_process_peak_bytes": 550924288,
+    "actual_SpMM": 3292,
+    "phases": {
+      "input_validation_seconds": 0.010815400048159063,
+      "data_io_seconds": 0.09128260001307353,
+      "normalization_seconds": 0.0655455999658443,
+      "conversion_seconds": 0.13787520001642406,
+      "power_init_seconds": 0.007636299997102469,
+      "input_seconds": 16.62130559864454,
+      "request_seconds_including_bind": 1416.0871628007153,
+      "full_score_digest_seconds": 23.461470899404958,
+      "mask_top20_seconds": 29.971012600057293,
+      "metrics_seconds": 0.3801696006557904,
+      "output_collection_seconds": 0.009983498195651919,
+      "checkpoint_io_seconds": 1.0463344996678643
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.048166129925654146,
+        "recall20": 0.07507487266620598,
+        "ndcg10": 0.05180670464497454,
+        "ndcg20": 0.062050702049199866
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b64_r3"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1874.9272712999955,
+    "observed_process_peak_bytes": 672595968,
+    "actual_SpMM": 4938,
+    "phases": {
+      "input_validation_seconds": 0.009425800002645701,
+      "data_io_seconds": 0.07646830001613125,
+      "normalization_seconds": 0.05975709995254874,
+      "conversion_seconds": 0.13081689999671653,
+      "power_init_seconds": 0.008086199988611042,
+      "input_seconds": 15.50989780051168,
+      "request_seconds_including_bind": 1804.6778517990606,
+      "full_score_digest_seconds": 21.86072219966445,
+      "mask_top20_seconds": 27.668894799950067,
+      "metrics_seconds": 0.34588569874176756,
+      "output_collection_seconds": 0.008908200485166162,
+      "checkpoint_io_seconds": 0.9401039998047054
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317473,
+        "recall20": 0.07526982697431306,
+        "ndcg10": 0.05166979699437705,
+        "ndcg20": 0.06202924187746306
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b64_r3"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 2061.4075853000395,
+    "observed_process_peak_bytes": 672890880,
+    "actual_SpMM": 4938,
+    "phases": {
+      "input_validation_seconds": 0.009421199967619032,
+      "data_io_seconds": 0.07850270002381876,
+      "normalization_seconds": 0.05553020001389086,
+      "conversion_seconds": 0.1296800000127405,
+      "power_init_seconds": 0.00821100000757724,
+      "input_seconds": 16.769650100148283,
+      "request_seconds_including_bind": 1985.780930699082,
+      "full_score_digest_seconds": 23.29376199876424,
+      "mask_top20_seconds": 29.90036110073561,
+      "metrics_seconds": 0.3834592998609878,
+      "output_collection_seconds": 0.010746299230959266,
+      "checkpoint_io_seconds": 1.128601200063713
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317473,
+        "recall20": 0.07526982697431306,
+        "ndcg10": 0.05166979699437705,
+        "ndcg20": 0.06202924187746306
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b64_r4"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1462.5357461000094,
+    "observed_process_peak_bytes": 551456768,
+    "actual_SpMM": 3292,
+    "phases": {
+      "input_validation_seconds": 0.008738699951209128,
+      "data_io_seconds": 0.08026159997098148,
+      "normalization_seconds": 0.06004090001806617,
+      "conversion_seconds": 0.13059359998442233,
+      "power_init_seconds": 0.007928999955765903,
+      "input_seconds": 16.403589800698683,
+      "request_seconds_including_bind": 1388.45976540033,
+      "full_score_digest_seconds": 23.076923201268073,
+      "mask_top20_seconds": 29.167963299842086,
+      "metrics_seconds": 0.3668983001844026,
+      "output_collection_seconds": 0.009529799688607454,
+      "checkpoint_io_seconds": 1.028248599905055
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.048166129925654146,
+        "recall20": 0.07507487266620598,
+        "ndcg10": 0.05180670464497454,
+        "ndcg20": 0.062050702049199866
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b64_r4"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1815.147553799965,
+    "observed_process_peak_bytes": 524800000,
+    "actual_SpMM": 9876,
+    "phases": {
+      "input_validation_seconds": 0.009213300014380366,
+      "data_io_seconds": 0.08054890000494197,
+      "normalization_seconds": 0.06024630001047626,
+      "conversion_seconds": 0.1347121000289917,
+      "power_init_seconds": 0.008383799984585494,
+      "input_seconds": 15.982079499284737,
+      "request_seconds_including_bind": 1742.1916364995996,
+      "full_score_digest_seconds": 22.624233198643196,
+      "mask_top20_seconds": 28.543359800591134,
+      "metrics_seconds": 0.6708097985829227,
+      "output_collection_seconds": 0.01856730115832761,
+      "checkpoint_io_seconds": 0.9899253996554762
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317472,
+        "recall20": 0.07526982697431321,
+        "ndcg10": 0.05166979699437713,
+        "ndcg20": 0.06202924187746308
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b32_r4"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 844.7512794000213,
+    "observed_process_peak_bytes": 408035328,
+    "actual_SpMM": 11880,
+    "phases": {
+      "input_validation_seconds": 0.005542800005059689,
+      "data_io_seconds": 0.042915600002743304,
+      "normalization_seconds": 0.02708810003241524,
+      "conversion_seconds": 0.06983789999503642,
+      "power_init_seconds": 0.004207200021483004,
+      "input_seconds": 4.082088198803831,
+      "request_seconds_including_bind": 824.0178353993106,
+      "full_score_digest_seconds": 5.5338429000694305,
+      "mask_top20_seconds": 7.132890300359577,
+      "metrics_seconds": 0.37962999992305413,
+      "output_collection_seconds": 0.010367099661380053,
+      "checkpoint_io_seconds": 0.5401270001311786
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416114,
+        "recall20": 0.07048911842922274,
+        "ndcg10": 0.048320488666914074,
+        "ndcg20": 0.05858298700888349
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b32_r4"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 624.7241029000143,
+    "observed_process_peak_bytes": 382570496,
+    "actual_SpMM": 4950,
+    "phases": {
+      "input_validation_seconds": 0.005617799994070083,
+      "data_io_seconds": 0.05618070001946762,
+      "normalization_seconds": 0.027768900035880506,
+      "conversion_seconds": 0.07261149998521432,
+      "power_init_seconds": 0.007815100019797683,
+      "input_seconds": 4.097217299975455,
+      "request_seconds_including_bind": 604.683779399551,
+      "full_score_digest_seconds": 5.389200599398464,
+      "mask_top20_seconds": 6.823382798931561,
+      "metrics_seconds": 0.20167190046049654,
+      "output_collection_seconds": 0.00526429945603013,
+      "checkpoint_io_seconds": 0.5279421001323499
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983808,
+        "recall20": 0.06949039885159486,
+        "ndcg10": 0.04775106057351299,
+        "ndcg20": 0.05787661689829024
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b64_r4"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 818.0203922000364,
+    "observed_process_peak_bytes": 507572224,
+    "actual_SpMM": 5940,
+    "phases": {
+      "input_validation_seconds": 0.00561540003400296,
+      "data_io_seconds": 0.046458899974823,
+      "normalization_seconds": 0.0271976999938488,
+      "conversion_seconds": 0.07007449999218807,
+      "power_init_seconds": 0.004325100046116859,
+      "input_seconds": 4.3518157005892135,
+      "request_seconds_including_bind": 797.1869582009967,
+      "full_score_digest_seconds": 5.659303800261114,
+      "mask_top20_seconds": 7.142944698862266,
+      "metrics_seconds": 0.21346149989403784,
+      "output_collection_seconds": 0.005463901441544294,
+      "checkpoint_io_seconds": 0.5158117999089882
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.041880279844161136,
+        "recall20": 0.0704891184292227,
+        "ndcg10": 0.048320488666914026,
+        "ndcg20": 0.0585829870088835
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b64_r4"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1838.8595364999492,
+    "observed_process_peak_bytes": 1029386240,
+    "actual_SpMM": 2472,
+    "phases": {
+      "input_validation_seconds": 0.009353799978271127,
+      "data_io_seconds": 0.08195600000908598,
+      "normalization_seconds": 0.05774990003556013,
+      "conversion_seconds": 0.1341344999964349,
+      "power_init_seconds": 0.008330399985425174,
+      "input_seconds": 15.311966600071173,
+      "request_seconds_including_bind": 1759.670878800156,
+      "full_score_digest_seconds": 21.337471099745017,
+      "mask_top20_seconds": 28.284979599702638,
+      "metrics_seconds": 0.20371300005353987,
+      "output_collection_seconds": 0.0049840997671708465,
+      "checkpoint_io_seconds": 0.9262491000699811
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04806112661317478,
+        "recall20": 0.07526982697431304,
+        "ndcg10": 0.051669796994377154,
+        "ndcg20": 0.0620292418774631
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b128_r0"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1346.6667153000017,
+    "observed_process_peak_bytes": 738803712,
+    "actual_SpMM": 1648,
+    "phases": {
+      "input_validation_seconds": 0.008753800007980317,
+      "data_io_seconds": 0.07897939998656511,
+      "normalization_seconds": 0.058685399999376386,
+      "conversion_seconds": 0.12262449995614588,
+      "power_init_seconds": 0.00829249998787418,
+      "input_seconds": 15.147374800173566,
+      "request_seconds_including_bind": 1276.9790772002307,
+      "full_score_digest_seconds": 21.10057000053348,
+      "mask_top20_seconds": 27.227391699852888,
+      "metrics_seconds": 0.20841590000782162,
+      "output_collection_seconds": 0.005048600083682686,
+      "checkpoint_io_seconds": 0.9255642000352964
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04816612992565418,
+        "recall20": 0.07507487266620595,
+        "ndcg10": 0.051806704644974555,
+        "ndcg20": 0.06205070204919988
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b128_r0"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1342.5000432999805,
+    "observed_process_peak_bytes": 1161375744,
+    "actual_SpMM": 824,
+    "phases": {
+      "input_validation_seconds": 0.0085073999944143,
+      "data_io_seconds": 0.07691630005137995,
+      "normalization_seconds": 0.058399900037329644,
+      "conversion_seconds": 0.1259423999581486,
+      "power_init_seconds": 0.008150500012561679,
+      "input_seconds": 14.0132486007642,
+      "request_seconds_including_bind": 1271.206796299899,
+      "full_score_digest_seconds": 19.40238000062527,
+      "mask_top20_seconds": 25.573989199765492,
+      "metrics_seconds": 0.12008520012022927,
+      "output_collection_seconds": 0.0023535002837888896,
+      "checkpoint_io_seconds": 0.8486067000776529
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04816612992565421,
+        "recall20": 0.07507487266620592,
+        "ndcg10": 0.05180670464497455,
+        "ndcg20": 0.06205070204919987
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b256_r0"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1808.2896424999926,
+    "observed_process_peak_bytes": 1544437760,
+    "actual_SpMM": 1236,
+    "phases": {
+      "input_validation_seconds": 0.009719099965877831,
+      "data_io_seconds": 0.07801389996893704,
+      "normalization_seconds": 0.05765229999087751,
+      "conversion_seconds": 0.1292243999778293,
+      "power_init_seconds": 0.008496599970385432,
+      "input_seconds": 14.621140299655963,
+      "request_seconds_including_bind": 1734.1382089000545,
+      "full_score_digest_seconds": 20.346761000342667,
+      "mask_top20_seconds": 26.700958799978253,
+      "metrics_seconds": 0.1251900996430777,
+      "output_collection_seconds": 0.0024417999084107578,
+      "checkpoint_io_seconds": 0.8795914000365883
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.048061126613174736,
+        "recall20": 0.07526982697431304,
+        "ndcg10": 0.05166979699437712,
+        "ndcg20": 0.06202924187746303
+      }
+    ],
+    "directory": "amazon_f2_Q1_author_snapshot_b256_r0"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 1200.510184099956,
+    "observed_process_peak_bytes": 464654336,
+    "actual_SpMM": 6584,
+    "phases": {
+      "input_validation_seconds": 0.009596700023394078,
+      "data_io_seconds": 0.08005899999989197,
+      "normalization_seconds": 0.060168600000906736,
+      "conversion_seconds": 0.12275620002765208,
+      "power_init_seconds": 0.00815930002136156,
+      "input_seconds": 15.504759201197885,
+      "request_seconds_including_bind": 1128.9623455998953,
+      "full_score_digest_seconds": 22.249829799868166,
+      "mask_top20_seconds": 28.082048900134396,
+      "metrics_seconds": 0.6467033000080846,
+      "output_collection_seconds": 0.017758900474291295,
+      "checkpoint_io_seconds": 0.9855379000655375
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04816612992565424,
+        "recall20": 0.07507487266620591,
+        "ndcg10": 0.051806704644974555,
+        "ndcg20": 0.0620507020491999
+      }
+    ],
+    "directory": "amazon_f2_Q1_streaming_direct_b32_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 665.7343244000222,
+    "observed_process_peak_bytes": 454975488,
+    "actual_SpMM": 2480,
+    "phases": {
+      "input_validation_seconds": 0.006012700032442808,
+      "data_io_seconds": 0.042444500024430454,
+      "normalization_seconds": 0.02717869996558875,
+      "conversion_seconds": 0.071963099995628,
+      "power_init_seconds": 0.004459699965082109,
+      "input_seconds": 4.008232299878728,
+      "request_seconds_including_bind": 646.1753531998256,
+      "full_score_digest_seconds": 5.292431199457496,
+      "mask_top20_seconds": 6.609724400041159,
+      "metrics_seconds": 0.11072409962071106,
+      "output_collection_seconds": 0.0026752001722343266,
+      "checkpoint_io_seconds": 0.5187152000144124
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.0413286687598381,
+        "recall20": 0.06949039885159487,
+        "ndcg10": 0.04775106057351298,
+        "ndcg20": 0.05787661689829029
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b128_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 844.1458824999863,
+    "observed_process_peak_bytes": 691240960,
+    "actual_SpMM": 2976,
+    "phases": {
+      "input_validation_seconds": 0.005963200004771352,
+      "data_io_seconds": 0.043772000004537404,
+      "normalization_seconds": 0.026831299997866154,
+      "conversion_seconds": 0.07132510002702475,
+      "power_init_seconds": 0.004259100009221584,
+      "input_seconds": 4.205968499998562,
+      "request_seconds_including_bind": 823.6614775996422,
+      "full_score_digest_seconds": 5.598956900648773,
+      "mask_top20_seconds": 7.04635799996322,
+      "metrics_seconds": 0.11762559926137328,
+      "output_collection_seconds": 0.002683799946680665,
+      "checkpoint_io_seconds": 0.508751200104598
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416115,
+        "recall20": 0.07048911842922269,
+        "ndcg10": 0.04832048866691403,
+        "ndcg20": 0.058582987008883494
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b128_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 921.0540214999928,
+    "observed_process_peak_bytes": 1044557824,
+    "actual_SpMM": 1488,
+    "phases": {
+      "input_validation_seconds": 0.0051663999911397696,
+      "data_io_seconds": 0.043395299988333136,
+      "normalization_seconds": 0.026693599997088313,
+      "conversion_seconds": 0.06748509994940832,
+      "power_init_seconds": 0.004183400014881045,
+      "input_seconds": 4.08029550005449,
+      "request_seconds_including_bind": 900.989043399808,
+      "full_score_digest_seconds": 5.434318799991161,
+      "mask_top20_seconds": 6.943158099544235,
+      "metrics_seconds": 0.06830560020171106,
+      "output_collection_seconds": 0.0014176999684423208,
+      "checkpoint_io_seconds": 0.49581630004104227
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04188027984416114,
+        "recall20": 0.07048911842922266,
+        "ndcg10": 0.04832048866691404,
+        "ndcg20": 0.058582987008883466
+      }
+    ],
+    "directory": "yelp_f5_Q1_author_snapshot_b256_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 766.7564510999946,
+    "observed_process_peak_bytes": 646688768,
+    "actual_SpMM": 1240,
+    "phases": {
+      "input_validation_seconds": 0.005940000002738088,
+      "data_io_seconds": 0.04317520000040531,
+      "normalization_seconds": 0.027137900004163384,
+      "conversion_seconds": 0.07114220003131777,
+      "power_init_seconds": 0.005002400022931397,
+      "input_seconds": 3.969757099810522,
+      "request_seconds_including_bind": 747.4381174999289,
+      "full_score_digest_seconds": 5.186892500030808,
+      "mask_top20_seconds": 6.604412899818271,
+      "metrics_seconds": 0.06898859998909757,
+      "output_collection_seconds": 0.0014713004347868264,
+      "checkpoint_io_seconds": 0.5039919001283124
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983808,
+        "recall20": 0.06949039885159487,
+        "ndcg10": 0.04775106057351297,
+        "ndcg20": 0.05787661689829028
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b256_r0"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "batch_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 718.5901615999755,
+    "observed_process_peak_bytes": 347222016,
+    "actual_SpMM": 9900,
+    "phases": {
+      "input_validation_seconds": 0.005541899998206645,
+      "data_io_seconds": 0.044030899996869266,
+      "normalization_seconds": 0.027161900012288243,
+      "conversion_seconds": 0.0723786999587901,
+      "power_init_seconds": 0.005100000009406358,
+      "input_seconds": 4.195087000087369,
+      "request_seconds_including_bind": 697.2871877005673,
+      "full_score_digest_seconds": 5.716378199285828,
+      "mask_top20_seconds": 7.2561050010845065,
+      "metrics_seconds": 0.3797622990095988,
+      "output_collection_seconds": 0.010661700565833598,
+      "checkpoint_io_seconds": 0.5642056000651792
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04132866875983807,
+        "recall20": 0.06949039885159483,
+        "ndcg10": 0.04775106057351287,
+        "ndcg20": 0.05787661689829026
+      }
+    ],
+    "directory": "yelp_f5_Q1_streaming_direct_b32_r0"
+  },
+  {
+    "config": "amazon_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 3282.3049533999874,
+    "observed_process_peak_bytes": 825040896,
+    "actual_SpMM": 9876,
+    "phases": {
+      "input_validation_seconds": 0.009879699966404587,
+      "data_io_seconds": 0.0796513999812305,
+      "normalization_seconds": 0.05924079997930676,
+      "conversion_seconds": 0.13372460001846775,
+      "power_init_seconds": 0.00798600004054606,
+      "input_seconds": 15.503683999413624,
+      "request_seconds_including_bind": 3211.3944732977543,
+      "full_score_digest_seconds": 22.239596700645052,
+      "mask_top20_seconds": 27.941911099886056,
+      "metrics_seconds": 0.35032379953190684,
+      "output_collection_seconds": 0.009420901187695563,
+      "checkpoint_io_seconds": 0.9462643002043478
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04690314953843009,
+        "recall20": 0.0739289615070529,
+        "ndcg10": 0.050250892147401915,
+        "ndcg20": 0.06066147175012091
+      }
+    ],
+    "directory": "amazon_f5_Q1_author_snapshot_b64_r0"
+  },
+  {
+    "config": "amazon_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory",
+    "attempt": 0,
+    "users": 52643,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 2651.6894687000313,
+    "observed_process_peak_bytes": 554840064,
+    "actual_SpMM": 8230,
+    "phases": {
+      "input_validation_seconds": 0.009128499950747937,
+      "data_io_seconds": 0.07746130001032725,
+      "normalization_seconds": 0.05798839998897165,
+      "conversion_seconds": 0.12312659999588504,
+      "power_init_seconds": 0.007924399978946894,
+      "input_seconds": 15.37613320024684,
+      "request_seconds_including_bind": 2581.013642300328,
+      "full_score_digest_seconds": 22.318365501821972,
+      "mask_top20_seconds": 27.73723649850581,
+      "metrics_seconds": 0.3515303998137824,
+      "output_collection_seconds": 0.009131500090006739,
+      "checkpoint_io_seconds": 0.9696136999409646
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.04729388416738817,
+        "recall20": 0.07442966331936773,
+        "ndcg10": 0.050743437875513255,
+        "ndcg20": 0.061151018609368536
+      }
+    ],
+    "directory": "amazon_f5_Q1_streaming_direct_b64_r0"
+  },
+  {
+    "config": "yelp_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 322.2805069999886,
+    "observed_process_peak_bytes": 381841408,
+    "actual_SpMM": 1980,
+    "phases": {
+      "input_validation_seconds": 0.005634800007101148,
+      "data_io_seconds": 0.05217049998464063,
+      "normalization_seconds": 0.027406300010625273,
+      "conversion_seconds": 0.07214269996620715,
+      "power_init_seconds": 0.0043114000000059605,
+      "input_seconds": 4.244560700200964,
+      "request_seconds_including_bind": 301.45275999984005,
+      "full_score_digest_seconds": 5.607296501286328,
+      "mask_top20_seconds": 7.133101999992505,
+      "metrics_seconds": 0.2032649993780069,
+      "output_collection_seconds": 0.005573000176809728,
+      "checkpoint_io_seconds": 0.607073099934496
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.03573038700537205,
+        "recall20": 0.05911236388092076,
+        "ndcg10": 0.04115633276540897,
+        "ndcg20": 0.04952134339938085
+      }
+    ],
+    "directory": "yelp_f2_Q1_streaming_direct_b64_r0"
+  },
+  {
+    "config": "yelp_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory",
+    "attempt": 0,
+    "users": 31668,
+    "quality_audit_passed": true,
+    "parent_wall_seconds": 464.2578426999971,
+    "observed_process_peak_bytes": 437456896,
+    "actual_SpMM": 2970,
+    "phases": {
+      "input_validation_seconds": 0.006804100004956126,
+      "data_io_seconds": 0.04652199998963624,
+      "normalization_seconds": 0.02579200000036508,
+      "conversion_seconds": 0.06420289998641238,
+      "power_init_seconds": 0.00466849998338148,
+      "input_seconds": 4.289044599863701,
+      "request_seconds_including_bind": 443.27442219969817,
+      "full_score_digest_seconds": 5.671864899224602,
+      "mask_top20_seconds": 7.180615100776777,
+      "metrics_seconds": 0.2064787989947945,
+      "output_collection_seconds": 0.005463000328745693,
+      "checkpoint_io_seconds": 0.6150937000056729
+    },
+    "quality": [
+      {
+        "alpha": 0.0,
+        "recall10": 0.03600825793535335,
+        "recall20": 0.059469952735216214,
+        "ndcg10": 0.04138459571642318,
+        "ndcg20": 0.04969791450262542
+      }
+    ],
+    "directory": "yelp_f2_Q1_author_snapshot_b64_r0"
+  }
+]

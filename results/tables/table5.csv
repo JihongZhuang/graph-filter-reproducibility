@@ -1,0 +1,15 @@
+configuration,route,batch,minutes,peak_MiB
+amazon_f2,author_snapshot,128,30.65,981.70
+amazon_f2,streaming_direct,128,22.44,704.58
+amazon_f2,streaming_direct,256,22.38,1107.57
+amazon_f2,author_snapshot,256,30.14,1472.89
+amazon_f2,streaming_direct,32,20.01,443.13
+yelp_f5,streaming_direct,128,11.10,433.90
+yelp_f5,author_snapshot,128,14.07,659.22
+yelp_f5,author_snapshot,256,15.35,996.17
+yelp_f5,streaming_direct,256,12.78,616.73
+yelp_f5,streaming_direct,32,11.98,331.14
+amazon_f5,author_snapshot,64,54.71,786.82
+amazon_f5,streaming_direct,64,44.19,529.14
+yelp_f2,streaming_direct,64,5.37,364.15
+yelp_f2,author_snapshot,64,7.74,417.19

@@ -1,0 +1,5 @@
+configuration,route,recall10,recall20,ndcg10,ndcg20
+yelp_f5,author_snapshot,4.19,7.05,4.83,5.86
+yelp_f5,streaming_direct,4.13,6.95,4.78,5.79
+amazon_f2,author_snapshot,4.81,7.53,5.17,6.20
+amazon_f2,streaming_direct,4.82,7.51,5.18,6.21

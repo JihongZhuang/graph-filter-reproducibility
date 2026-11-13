@@ -1,0 +1,354 @@
+[
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 1,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 2,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 3,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 32,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 4,
+    "stage": "controlled_main_and_budget"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "amazon_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 128,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 256,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "yelp_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 32,
+    "repeat": 0,
+    "stage": "batch_exploratory"
+  },
+  {
+    "config": "amazon_f5",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory"
+  },
+  {
+    "config": "amazon_f5",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory"
+  },
+  {
+    "config": "yelp_f2",
+    "Q": 1,
+    "method": "streaming_direct",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory"
+  },
+  {
+    "config": "yelp_f2",
+    "Q": 1,
+    "method": "author_snapshot",
+    "batch": 64,
+    "repeat": 0,
+    "stage": "degree_exploratory"
+  }
+]

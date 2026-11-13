@@ -1,0 +1,20 @@
+{
+  "files": {
+    "yelp2018/train.txt": {
+      "bytes": 6904880,
+      "sha256": "1e9568725a9e833d0ac3bae01c94cd95367f73b3bb6104fd26b5f65ea5054093"
+    },
+    "yelp2018/test.txt": {
+      "bytes": 1986152,
+      "sha256": "9cd9b37926cd1447a06625ffa7914527573fb097c10cb0bbdb1d1b8ded3742fe"
+    },
+    "amazon-book/train.txt": {
+      "bytes": 14125691,
+      "sha256": "529066026085919381acd4ce19f69e9eafa4af3fef1a10119ea5551cc2ef8530"
+    },
+    "amazon-book/test.txt": {
+      "bytes": 3848611,
+      "sha256": "6250754994dd953b91b48dccdd77a73f318e0634b4757c2abfcc9d33a54ab0f5"
+    }
+  }
+}

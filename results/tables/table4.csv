@@ -1,0 +1,6 @@
+component,released,direct
+Graph operator,Implicit P action,Same implicit P action
+Propagation,K Lanczos iterations,d power actions
+Sparse multiplications per batch,2K,2d
+Additional response workspace,Degree-dependent basis,Constant number of response and accumulation blocks
+Projection and back-projection,Required,Direct item-score accumulation

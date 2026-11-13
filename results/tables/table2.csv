@@ -1,0 +1,5 @@
+configuration,comparison,pairs,time_ratio,time_ci_low,time_ci_high,peak_ratio,peak_ci_low,peak_ci_high,all_pairs_near_peak
+yelp_f5,same_batch64,5,1.25,1.23,1.28,1.33,1.33,1.33,False
+yelp_f5,author32_vs_direct64_budget,5,1.38,1.34,1.44,1.07,1.07,1.07,False
+amazon_f2,same_batch64,5,1.38,1.32,1.44,1.22,1.22,1.22,False
+amazon_f2,author32_vs_direct64_budget,5,1.35,1.29,1.40,0.95,0.95,0.96,True
